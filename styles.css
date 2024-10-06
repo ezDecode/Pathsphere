@@ -924,3 +924,147 @@
       opacity: 0; 
   }
 }
+.container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.text-content {
+  flex: 1 1 100%;
+  margin: 10px 0;
+}
+
+.text-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  flex: 1 1 calc(33.333% - 20px);
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item i {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.feature-item h6 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.feature-item p {
+  font-size: 14px;
+  margin: 5px 0 0;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .text-content {
+    flex: 1 1 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .feature-item {
+    flex: 1 1 calc(33.333% - 20px);
+  }
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.feature {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+}
+
+.feature img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.feature h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.feature p {
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.feature .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.feature .btn:hover {
+  background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .features {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .feature {
+      width: 80%;
+  }
+}
